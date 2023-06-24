@@ -1,0 +1,19 @@
+.card {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.card.rotate {
+  transform: rotateY(180deg);
+}
+
+.front {
+  backface-visibility: hidden;
+}
+
+.back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
